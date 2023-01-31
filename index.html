@@ -12,33 +12,34 @@
 </head>
 <body>
   <header id="header">
-    <img id="header-img">
     <nav class="navbar navbar-expand navbar-dark bg-dark" id="nav-bar">
       <div class="container-fluid">
       <a class="navbar-brand" href="#">Original Trombones</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav me-auto">
-            <li class="nav-item active"><a class="nav-link" href="">Features</a></li>
-            <li class="nav-item active"><a class="nav-link" href="">How it works</a></li>
-            <li class="nav-item active"><a class="nav-link" href="">Pricing</a></li>
+            <li class="nav-item active"><a class="nav-link" href="#Features">Features</a></li>
+            <li class="nav-item active"><a class="nav-link" href="#footer">How it works</a></li>
+            <li class="nav-item active"><a class="nav-link" href="#Pricing">Pricing</a></li>
           </ul>
-          <form role= "search" form" action="https://www.freecodecamp.com/email-submit">
-            <input type="email" type="search" class="form-control" id="email" placeholder="write me here">
+          <form role= "search" form" action="https://www.freecodecamp.com/email-submit" id="form">
+            <input name="email" id="email" type="email" placeholder="Enter your email address" required="" class="form-control">
+            <input id="submit" type="submit" value="Get Started" class="btn">
           </form>
         </div>
       </div>
       </nav>
+      <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png">
   </header>
   
-  <div class="container-fluid video">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/tTkz7hnY8WE" 
+  <div class="container-fluid video" >
+    <iframe width="560" height="315" id="video" src="https://www.youtube.com/embed/tTkz7hnY8WE" 
     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
     gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
 
-  <div class="container flex-container">
-    <div class="items">
+  <div class="container flex-container" id="Features">
+    <div class="items" >
       <div class="icon"><i class="fa fa-home"></i></div>
       <div class="description">
         <h2>Premium Materials</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  Quis, vel officia omnis dolores sapiente esse. Quod facilis aspernatur, unde ullam aut laboriosam commodi, soluta fugit suscipit iusto, amet nemo eveniet?</p>
@@ -51,7 +52,7 @@
       </div>
     </div>
   </div>
-  <div class="container flex-container">
+  <div class="container flex-container" id="Pricing">
     <div class="productOne" >
       <h2>Abc</h2>
       <ol><li>Lorem ipsum.</li><li>Lorem ipsum.</li><li>Lorem ipsum.</li><li>Lorem ipsum.</li></ol>
@@ -65,7 +66,7 @@
       <ol><li>Lorem ipsum</li><li>Lorem ipsum</li><li>Lorem ipsum</li><li>Lorem ipsum</li></ol>
     </div>
   </div>
-  <footer>
+  <footer id="footer">
   <ul>
     <li><a href="#">Privacy</a></li>
     <li><a href="#">Terms</a></li>
