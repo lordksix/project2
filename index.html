@@ -11,98 +11,67 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header id="header">
-        <img id="header-img">
-        <navid="nav-bar">
-            <ul>
-                <li><a class="nav-link" href="">Features</a></li>
-                <li ><a class="nav-link" href="">How it works</a></li>
-                <li ><a class="nav-link" href="">Pricing</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div>
+  <header id="header">
+    <img id="header-img">
+    <nav class="navbar navbar-expand navbar-dark bg-dark" id="nav-bar">
+      <div class="container-fluid">
+      <a class="navbar-brand" href="#">Original Trombones</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item active"><a class="nav-link" href="">Features</a></li>
+            <li class="nav-item active"><a class="nav-link" href="">How it works</a></li>
+            <li class="nav-item active"><a class="nav-link" href="">Pricing</a></li>
+          </ul>
+          <form role= "search" form" action="https://www.freecodecamp.com/email-submit">
+            <input type="email" type="search" class="form-control" id="email" placeholder="write me here">
+          </form>
+        </div>
+      </div>
+      </nav>
+  </header>
+  
+  <div class="container-fluid video">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/tTkz7hnY8WE" 
     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-     gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-     </div>
-     <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input type="email" id="email" placeholder="write me here">
-        <input type="submit" id="submit">
-     </form>
-     <div class="container">
-        <div class="items">
-        <div class="icon"><i class="fa fa-home"></i>
-        </div>
-        <div class="description">
-            <h2>Premium Materials</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Quis, vel officia omnis dolores sapiente esse. Quod facilis
-                  aspernatur, unde ullam aut laboriosam commodi, soluta fugit suscipit iusto, amet nemo eveniet?
-             
-            </p>
-          </div>
-          </div>
-          <div class="items">
-            <div class="icon"><i class="fa fa-home"></i>
-            </div>
-            <div class="description">
-                <h2>Premium Materials</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Quis, vel officia omnis dolores sapiente esse. Quod facilis aspernatur,
-                    unde ullam aut laboriosam commodi, soluta fugit suscipit iusto, amet nemo eveniet?
+    gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
 
-     <div class="container">
-
-     </div>
-
-     
-
-        <div id="prices">
-            <div class="productOne" >
-              <div>Apple</div>
-              <h2>Abc</h2>
-              <ol>
-                <li>Lorem ipsum.</li>
-                <li>Lorem ipsum.</li>
-                <li>Lorem ipsum.</li>
-                <li>Lorem ipsum.</li>
-              </ol>
-              <button class="btn">Select</button>
-            </div>
-            <div class="productTwo" >
-                <div>Banana</div>
-                <h2>Abc</h2>
-                <ol>
-                    <li>Lorem ipsum</li>
-                    <li>Lorem ipsum</li>
-                    <li>Lorem ipsum</li>
-                    <li>Lorem ipsum</li>
-                  </ol>
-                <button class="btn">Select</button>
-              </div>
-              <div class="productThree" >
-                <div>Orange</div>
-                <h2>Abc</h2>
-              <ol>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-              </ol>
-                <button class="btn">Select</button>
-              </div>
-          </div>
-
-          <footer>
-            <ul>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-            <span>Copyright 2023, Original Trombones</span>
-          </footer>
+  <div class="container flex-container">
+    <div class="items">
+      <div class="icon"><i class="fa fa-home"></i></div>
+      <div class="description">
+        <h2>Premium Materials</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  Quis, vel officia omnis dolores sapiente esse. Quod facilis aspernatur, unde ullam aut laboriosam commodi, soluta fugit suscipit iusto, amet nemo eveniet?</p>
+      </div>
+    </div>
+    <div class="items">
+      <div class="icon"><i class="fa fa-home"></i></div>
+      <div class="description">
+        <h2>Premium Materials</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  Quis, vel officia omnis dolores sapiente esse. Quod facilis aspernatur, unde ullam aut laboriosam commodi, soluta fugit suscipit iusto, amet nemo eveniet?
+      </div>
+    </div>
+  </div>
+  <div class="container flex-container">
+    <div class="productOne" >
+      <h2>Abc</h2>
+      <ol><li>Lorem ipsum.</li><li>Lorem ipsum.</li><li>Lorem ipsum.</li><li>Lorem ipsum.</li></ol>
+    </div>
+    <div class="productTwo" >
+      <h2>Abc</h2>
+      <ol><li>Lorem ipsum</li><li>Lorem ipsum</li><li>Lorem ipsum</li><li>Lorem ipsum</li></ol>
+    </div>
+    <div class="productThree" >
+      <h2>Abc</h2>
+      <ol><li>Lorem ipsum</li><li>Lorem ipsum</li><li>Lorem ipsum</li><li>Lorem ipsum</li></ol>
+    </div>
+  </div>
+  <footer>
+  <ul>
+    <li><a href="#">Privacy</a></li>
+    <li><a href="#">Terms</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <span>Copyright 2023, Original Trombones</span>
+  </footer>
 </body>
 </html>
